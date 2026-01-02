@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>正月明け、会社に行けない人へ｜退職代行の選び方と今日の手順</title>
+  <meta name="description" content="休み明けが怖い・上司に言えない・手順が分からない人向け。退職代行（弁護士/労組/民間）の違いと選び方、今日やることを1ページで整理。※PR/広告あり" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- OG（SNSシェア用） -->
+  <meta property="og:title" content="正月明け、会社に行けない人へ｜退職代行の選び方" />
+  <meta property="og:description" content="種類の違い・選び方・今日やることを1ページで整理（PR/広告あり）。" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#121a33;
+      --card2:#0f1730;
+      --line:rgba(255,255,255,.12);
+      --txt:#eaf0ff;
+      --muted:rgba(234,240,255,.72);
+      --acc:#7c5cff;
+      --acc2:#23d5ab;
+      --warn:#ffcc00;
+      --shadow: 0 18px 45px rgba(0,0,0,.35);
+      --r:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
+      line-height:1.75;
+      color:var(--txt);
+      background:
+        radial-gradient(1200px 600px at 15% 10%, rgba(124,92,255,.35), transparent 55%),
+        radial-gradient(900px 500px at 80% 25%, rgba(35,213,171,.25), transparent 60%),
+        radial-gradient(1000px 600px at 50% 90%, rgba(255,204,0,.12), transparent 55%),
+        var(--bg);
+    }
+    a{color:inherit}
+    .wrap{max-width:1100px;margin:0 auto;padding:18px}
+    .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    .badge{
+      display:inline-flex;align-items:center;gap:8px;
+      font-size:12px;padding:6px 10px;border:1px solid var(--line);
+      border-radius:999px;background:rgba(255,255,255,.06)
+    }
+    .muted{color:var(--muted);font-size:13px}
+    .hero{
+      margin-top:14px;
+      border:1px solid var(--line);
+      border-radius:26px;
+      background: linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+    .hero::after{
+      content:"";
+      position:absolute;inset:-2px;
+      background:
+        radial-gradient(700px 260px at 18% 0%, rgba(124,92,255,.26), transparent 70%),
+        radial-gradient(700px 260px at 82% 10%, rgba(35,213,171,.18), transparent 70%);
+      pointer-events:none;
+    }
+    .hero-in{position:relative;z-index:1;padding:22px}
+    h1{font-size:34px;line-height:1.15;margin:10px 0 10px}
+    .sub{font-size:15px;color:var(--muted);margin:0 0 14px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+    .col7{grid-column:span 7}
+    .col5{grid-column:span 5}
+    .col6{grid-column:span 6}
+    .col12{grid-column:span 12}
+    @media (max-width: 920px){
+      h1{font-size:28px}
+      .col7,.col5,.col6{grid-column:span 12}
+    }
+
+    .card{
+      border:1px solid var(--line);
+      border-radius: var(--r);
+      background: rgba(255,255,255,.05);
+      box-shadow: 0 10px 24px rgba(0,0,0,.22);
+      padding:16px;
+      margin: 14px 0;
+    }
+    .card h2{font-size:18px;margin:0 0 8px}
+    .card h3{font-size:15px;margin:10px 0 6px}
+    ul{margin:8px 0;padding-left:1.1em}
+    li{margin:6px 0}
+    ol{margin:8px 0;padding-left:1.2em}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      padding:12px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.18);
+      text-decoration:none;font-weight:800;
+      background: rgba(255,255,255,.07);
+      transition: transform .06s ease, background .2s ease;
+    }
+    .btn:hover{transform: translateY(-1px);background: rgba(255,255,255,.10)}
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(124,92,255,.95), rgba(35,213,171,.75));
+      border-color: transparent;
+      color:#0b1020;
+    }
+    .btn.primary:hover{background: linear-gradient(135deg, rgba(124,92,255,1), rgba(35,213,171,.9))}
+    .pill{
+      padding:8px 10px;border:1px solid var(--line);border-radius:999px;
+      background: rgba(0,0,0,.12);font-size:12px;color:var(--muted)
+    }
+    .hr{height:1px;background:rgba(255,255,255,.12);margin:12px 0}
+    .warn{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 10px;border-radius:14px;
+      background: rgba(255,204,0,.10);
+      border:1px solid rgba(255,204,0,.28);
+      color: rgba(255,235,160,.95);
+      font-size:12px;
+    }
+    .sticky{
+      position: sticky;
+      bottom: 12px;
+      z-index: 10;
+      margin-top: 16px;
+    }
+    .bar{
+      display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
+      border:1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(15,23,48,.72);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 18px 50px rgba(0,0,0,.45);
+      padding: 12px 12px;
+    }
+    .tiny{font-size:12px;color:rgba(234,240,255,.72)}
+    .anchor{scroll-margin-top:90px}
+    .kpi{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .table{width:100%;border-collapse:collapse;margin-top:8px;font-size:13px}
+    .table th,.table td{border-bottom:1px solid rgba(255,255,255,.12);padding:10px;vertical-align:top}
+    .table th{color:rgba(234,240,255,.86);text-align:left}
+    .footer{padding:26px 18px 40px;color:rgba(234,240,255,.6);font-size:13px}
+    .note{font-size:12px;color:rgba(234,240,255,.65)}
+    code{background:rgba(0,0,0,.2);padding:2px 6px;border-radius:8px}
+  </style>
+</head>
+
+<body>
+  <header class="wrap">
+    <div class="row">
+      <span class="badge">PR（広告）</span>
+      <span class="badge">2026/01/02 更新</span>
+      <span class="badge">1ページで結論</span>
+    </div>
+
+    <div class="hero">
+      <div class="hero-in grid">
+        <div class="col7">
+          <h1>正月明け、<br>会社に行けない人へ。</h1>
+          <p class="sub">
+            「もう無理かも」と思ったら、まずは<b>今日だけ逃げ道</b>を作る。<br>
+            退職代行（弁護士/労組/民間）の違い・選び方・当日の流れを整理しました。
+          </p>
+
+          <div class="row">
+            <a class="btn primary" href="#recommend">候補を見る</a>
+            <a class="btn" href="#choose">選び方</a>
+            <a class="btn" href="#steps">今日やること</a>
+          </div>
+
+          <div class="kpi">
+            <span class="pill">✓ PR表記あり</span>
+            <span class="pill">✓ 選び方の基準つき</span>
+            <span class="pill">✓ 公式確認前提</span>
+          </div>
+
+          <p class="muted" style="margin-top:12px">
+            ※本ページはプロモーション（広告）を含みます。リンク経由で申込等があった場合、運営者が報酬を得ることがあります。条件・料金・対応範囲は必ず公式で確認してください。
+          </p>
+        </div>
+
+        <div class="col5">
+          <div class="card">
+            <h2>最短で読むなら</h2>
+            <ul>
+              <li><a href="#recommend">候補（アフィリンク）</a></li>
+              <li><a href="#choose">失敗しない選び方</a></li>
+              <li><a href="#steps">今日やる3ステップ</a></li>
+              <li><a href="#faq">よくある質問</a></li>
+              <li><a href="#articles">記事（5本）</a></li>
+            </ul>
+            <div class="hr"></div>
+            <div class="warn">⚠︎ 個別の法律判断は専門家へ（このサイトは一般情報）</div>
+          </div>
+
+          <div class="card" style="margin-top:14px">
+            <h2>いま多い状態</h2>
+            <ul>
+              <li>休み明けを想像すると動悸・吐き気</li>
+              <li>上司に言えない／引き止めが怖い</li>
+              <li>有休・私物・会社支給品が不安</li>
+            </ul>
+            <p class="note">※危険を感じる/体調がきつい場合は、まず医療・相談窓口の利用も検討してください。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="card">
+      <h2>まず結論：迷ったら「型」で選ぶ</h2>
+      <div class="grid">
+        <div class="card col6">
+          <h3>弁護士運営（安全重視）</h3>
+          <ul>
+            <li>トラブルになりそう／条件面の話が出そう</li>
+            <li>安心を優先したい</li>
+          </ul>
+        </div>
+        <div class="card col6">
+          <h3>労組運営（バランス）</h3>
+          <ul>
+            <li>費用と安心のバランス</li>
+            <li>一般的な退職手続き中心</li>
+          </ul>
+        </div>
+        <div class="card col12">
+          <h3>民間（スピード優先）</h3>
+          <ul>
+            <li>「まず連絡したい」人向け</li>
+            <li>対応範囲は必ず公式で確認</li>
+          </ul>
+          <p class="note">※このページでは“何ができるか/できないか”の線引きを重視します。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 候補（アフィリンク） -->
+    <section class="card anchor" id="recommend">
+      <h2>候補（ここにアフィリンクを貼る）</h2>
+      <p class="muted">
+        下の <code>YOUR_AFF_LINK_A</code> などを、あなたのASPで発行したリンクに置換してください。
+      </p>
+
+      <div class="grid">
+        <div class="card col6">
+          <h3>【弁護士運営】安心を最優先にしたい</h3>
+          <ul>
+            <li>揉めそう／条件面で不安</li>
+            <li>“安全に終わらせたい”</li>
+          </ul>
+          <a class="btn primary" href="YOUR_AFF_LINK_A" rel="sponsored nofollow noopener" target="_blank">公式で条件を見る（PR）</a>
+          <p class="note">※料金総額・返金条件・対応範囲は必ず公式で確認。</p>
+        </div>
+
+        <div class="card col6">
+          <h3>【労組運営】費用と安心のバランス</h3>
+          <ul>
+            <li>迷ったらまず比較の基準に</li>
+            <li>“不安はあるがトラブル確度は低め”</li>
+          </ul>
+          <a class="btn primary" href="YOUR_AFF_LINK_B" rel="sponsored nofollow noopener" target="_blank">公式で条件を見る（PR）</a>
+          <p class="note">※対応範囲はサービスにより異なります。</p>
+        </div>
+
+        <div class="card col12">
+          <h3>【民間】とにかく早く連絡したい（範囲確認が重要）</h3>
+          <ul>
+            <li>“まず一歩”を最短で踏みたい</li>
+            <li>安さだけでなく、対応範囲・追加費用を確認</li>
+          </ul>
+          <a class="btn primary" href="YOUR_AFF_LINK_C" rel="sponsored nofollow noopener" target="_blank">公式で条件を見る（PR）</a>
+          <p class="note">※トラブル想定なら弁護士運営も比較。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 選び方 -->
+    <section class="card anchor" id="choose">
+      <h2>失敗しない選び方（これだけ）</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>見る軸</th>
+            <th>確認ポイント</th>
+            <th>やりがちなミス</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>対応範囲</b></td>
+            <td>何をしてくれるか／連絡手段／即日条件</td>
+            <td>“全部やってくれる”と勘違い</td>
+          </tr>
+          <tr>
+            <td><b>料金総額</b></td>
+            <td>追加費用・返金条件・支払方法</td>
+            <td>安く見せて後から増える</td>
+          </tr>
+          <tr>
+            <td><b>サポート</b></td>
+            <td>返信速度／土日祝／相談回数の扱い</td>
+            <td>休み明けに間に合わない</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="hr"></div>
+      <p class="muted">
+        不安が強いときほど、まず「公式で条件を確認する」→「合わなければ他も比較」でOK。
+      </p>
+    </section>
+
+    <!-- 今日やる -->
+    <section class="card anchor" id="steps">
+      <h2>今日やる3ステップ（詰まない順番）</h2>
+      <ol>
+        <li><b>状況整理</b>：雇用形態／入社日／有休残／会社支給品（PC・鍵・制服）</li>
+        <li><b>回収・返却</b>：私物回収の方法、返却物をリスト化（郵送/手渡し）</li>
+        <li><b>問い合わせ</b>：対応範囲・総額・当日の流れを確認して申込</li>
+      </ol>
+      <p class="note">※このページは一般情報です。個別の法律判断・交渉が必要な場合は専門家へ。</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="card anchor" id="faq">
+      <h2>よくある質問</h2>
+
+      <h3>Q. 会社に連絡するのが怖い</h3>
+      <p class="muted">A. まずは「公式で当日の流れ」を確認し、あなたがやる範囲を最小化できるか見てください。</p>
+
+      <h3>Q. 有休・私物・会社支給品が不安</h3>
+      <p class="muted">A. “確認リスト”を作っておくと詰まりにくいです。返却は郵送になる場合もあります（公式の案内を優先）。</p>
+
+      <h3>Q. 申込前に絶対確認すべきことは？</h3>
+      <p class="muted">A. 料金総額、追加費用、返金条件、対応範囲、連絡手段、開始条件（即日など）です。</p>
+    </section>
+
+    <!-- 記事（審査用にもなる） -->
+    <section class="card anchor" id="articles">
+      <h2>記事（5本）</h2>
+      <p class="muted">※ASP審査対策にもなるので、ここから5記事を作ってリンクしてください。</p>
+      <ul>
+        <li><a href="articles/what.html">退職代行とは？できること・できないこと</a></li>
+        <li><a href="articles/types.html">弁護士/労組/民間の違い（選び方）</a></li>
+        <li><a href="articles/price.html">料金の見方（総額・追加費用・返金）</a></li>
+        <li><a href="articles/steps.html">依頼当日の流れ（準備チェックリスト）</a></li>
+        <li><a href="articles/faq.html">よくある質問（有休・返却・連絡）</a></li>
+      </ul>
+    </section>
+
+    <!-- 免責・運営 -->
+    <section class="card">
+      <h2>免責・運営</h2>
+      <p class="muted">
+        当サイトは一般的な情報提供を目的としています。内容の正確性・最新性には配慮しますが、最終判断は各サービスの公式情報をご確認ください。
+        個別具体の法律相談・交渉が必要な場合は、弁護士等の専門家へご相談ください。
+      </p>
+      <p class="muted">
+        <a href="privacy.html">プライバシーポリシー</a> /
+        <a href="mailto:YOUR_EMAIL@example.com">お問い合わせ</a>
+      </p>
+      <p class="note">※メールを使いたくないなら、ここは削除してもOK（ただ審査ではあると有利）。</p>
+    </section>
+
+    <!-- 下部固定CTA -->
+    <div class="sticky">
+      <div class="bar">
+        <div>
+          <div style="font-weight:900">まずは公式で条件確認（PR）</div>
+          <div class="tiny">料金・対応範囲・対応時間は公式を優先</div>
+        </div>
+        <div class="row">
+          <a class="btn primary" href="YOUR_AFF_LINK_A" rel="sponsored nofollow noopener" target="_blank">今すぐ見る</a>
+          <a class="btn" href="#recommend">比較する</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="wrap footer">
+    <div>© 2026 あなたのサイト名</div>
+  </footer>
+</body>
+</html>
