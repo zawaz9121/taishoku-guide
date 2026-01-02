@@ -3,167 +3,92 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>正月明け、会社に行けない人へ｜退職代行の選び方と最短手順</title>
-  <meta name="description" content="年末年始明けに『もう無理』となりやすい時期。退職代行の種類（弁護士/労組/民間）と選び方、当日の流れ、注意点を1ページで整理。※PRあり" />
+  <title>正月明け、出社できない人へ｜退職代行の選び方と“今日の逃げ道”</title>
+  <meta name="description" content="休み明けが怖い。吐き気がする。涙が出る。そんなときに“今日だけ”逃げ道を作るための退職代行の選び方を1ページで整理（PRあり）。" />
   <meta name="robots" content="index,follow" />
+
+  <!-- OpenGraph（SNSでシェアした時に見栄えが良くなる） -->
+  <meta property="og:title" content="正月明け、出社できない人へ｜今日だけ逃げ道を作る" />
+  <meta property="og:description" content="退職代行の種類（弁護士/労組/民間）と選び方、今日やる3ステップを1ページで整理（PRあり）。" />
+  <meta property="og:type" content="website" />
+
   <style>
-    :root { --b:#111; --g:#666; --bg:#fafafa; --card:#fff; --line:#e8e8e8; }
-    body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif; line-height:1.75; color:var(--b); background:var(--bg); }
-    header, main, footer { max-width: 980px; margin: 0 auto; padding: 18px; }
-    header { padding-top: 26px; }
-    .row { display:flex; gap:14px; flex-wrap:wrap; }
-    .badge { display:inline-flex; align-items:center; gap:8px; font-size:12px; padding:6px 10px; border:1px solid var(--line); border-radius:999px; background:#fff; }
-    .muted { color:var(--g); font-size: 13px; }
-    .hero { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:18px; box-shadow: 0 4px 18px rgba(0,0,0,.04); }
-    .card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:16px; box-shadow: 0 4px 18px rgba(0,0,0,.03); margin: 14px 0; }
-    h1 { font-size: 26px; margin: 10px 0 8px; }
-    h2 { font-size: 18px; margin: 0 0 8px; }
-    h3 { font-size: 15px; margin: 14px 0 6px; }
-    ul { padding-left: 1.1em; margin: 8px 0; }
-    li { margin: 6px 0; }
-    .btn { display:inline-block; padding: 10px 14px; border-radius: 12px; border:1px solid var(--b); text-decoration:none; color:var(--b); background:#fff; font-weight:600; }
-    .btn.primary { background: var(--b); color:#fff; }
-    .grid { display:grid; grid-template-columns: repeat(12, 1fr); gap:14px; }
-    .col6 { grid-column: span 6; }
-    .col12 { grid-column: span 12; }
-    @media (max-width: 860px){ .col6 { grid-column: span 12; } }
-    .sticky { position: sticky; bottom: 12px; z-index: 5; }
-    .bar { background:#fff; border:1px solid var(--line); border-radius: 16px; padding: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.08); display:flex; justify-content:space-between; align-items:center; gap:12px; }
-    .small { font-size: 12px; color: var(--g); }
-    .hr { height:1px; background:var(--line); margin: 12px 0; }
-    a { color: inherit; }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="row">
-      <span class="badge">PR（広告）</span>
-      <span class="badge">年末年始明けの退職相談</span>
-      <span class="badge">1ページで要点だけ</span>
-    </div>
+    :root{
+      --bg:#0b1020;
+      --card:#0f1730;
+      --card2:#0d152b;
+      --line:rgba(255,255,255,.12);
+      --txt:#eaf0ff;
+      --muted:rgba(234,240,255,.72);
+      --acc:#7c5cff;
+      --acc2:#23d5ab;
+      --warn:#ffcc00;
+      --shadow: 0 18px 45px rgba(0,0,0,.35);
+      --r:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
+      line-height:1.75;
+      color:var(--txt);
+      background: radial-gradient(1200px 600px at 15% 10%, rgba(124,92,255,.35), transparent 55%),
+                  radial-gradient(900px 500px at 80% 25%, rgba(35,213,171,.25), transparent 60%),
+                  radial-gradient(1000px 600px at 50% 90%, rgba(255,204,0,.12), transparent 55%),
+                  var(--bg);
+    }
+    a{color:inherit}
+    .wrap{max-width:1060px;margin:0 auto;padding:18px}
+    .badge{
+      display:inline-flex;align-items:center;gap:8px;
+      font-size:12px;padding:6px 10px;border:1px solid var(--line);
+      border-radius:999px;background:rgba(255,255,255,.06)
+    }
+    .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    .muted{color:var(--muted);font-size:13px}
+    .hero{
+      margin-top:14px;
+      border:1px solid var(--line);
+      border-radius:26px;
+      background: linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+    .hero::after{
+      content:"";
+      position:absolute;inset:-2px;
+      background: radial-gradient(700px 250px at 20% 0%, rgba(124,92,255,.28), transparent 70%),
+                  radial-gradient(700px 250px at 80% 10%, rgba(35,213,171,.18), transparent 70%);
+      pointer-events:none;
+      opacity:.9;
+    }
+    .hero-in{position:relative;z-index:1;padding:22px}
+    h1{font-size:34px;line-height:1.15;margin:10px 0 10px}
+    .sub{font-size:15px;color:var(--muted);margin:0 0 14px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+    .col7{grid-column:span 7}
+    .col5{grid-column:span 5}
+    .col6{grid-column:span 6}
+    .col12{grid-column:span 12}
+    @media (max-width: 920px){
+      h1{font-size:28px}
+      .col7,.col5,.col6{grid-column:span 12}
+    }
 
-    <div class="hero">
-      <h1>正月明け、「会社に行けない」人へ</h1>
-      <p class="muted">
-        ※本ページはプロモーション（広告）を含みます。リンク経由で申込等があった場合、運営者が報酬を得ることがあります。条件・料金・対応時間は必ず公式で確認してください。
-      </p>
-      <div class="row">
-        <a class="btn primary" href="#recommend">まずは候補を見る</a>
-        <a class="btn" href="#steps">今日やる3ステップ</a>
-        <a class="btn" href="#choose">失敗しない選び方</a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="card">
-      <h2>いま刺さりやすい“悩み”</h2>
-      <ul>
-        <li>休み明けに出社を想像すると動悸・吐き気がする</li>
-        <li>上司に言うのが怖い／引き止めが強そう</li>
-        <li>有休・私物・書類など、何から手を付けるべきか分からない</li>
-      </ul>
-      <p class="muted">
-        ここでは「退職代行って何ができる？」「どれを選ぶ？」を、煽らずに整理します（個別の法律判断は弁護士等に相談を）。
-      </p>
-    </section>
-
-    <section class="card" id="recommend">
-      <h2>まずは候補（ここにあなたのアフィリンクを差し込む）</h2>
-      <p class="muted">※下の3つは“型”の例。実在サービス名に差し替えてOK。</p>
-
-      <div class="grid">
-        <div class="card col6">
-          <h3>【弁護士運営】交渉が必要そうならこの型</h3>
-          <ul>
-            <li>未払い残業代・退職金・有休の取得など「交渉」要素が出やすい人向け</li>
-            <li>トラブルが想定される会社でも安心度が高い</li>
-          </ul>
-          <a class="btn primary" href="https://example.com/" rel="sponsored nofollow noopener" target="_blank">公式で条件を見る（アフィ）</a>
-          <p class="small">※「交渉」に踏み込む行為は弁護士以外だと非弁の問題になり得ます。</p>
-        </div>
-
-        <div class="card col6">
-          <h3>【労働組合運営】費用と安心のバランス型</h3>
-          <ul>
-            <li>一般的な退職の意思表示＋やり取りの代行が中心</li>
-            <li>“弁護士ほどではないが安心寄り”の選択肢になりやすい</li>
-          </ul>
-          <a class="btn primary" href="https://example.com/" rel="sponsored nofollow noopener" target="_blank">公式で条件を見る（アフィ）</a>
-          <p class="small">※対応範囲は各サービスの表示を必ず確認。</p>
-        </div>
-
-        <div class="card col12">
-          <h3>【民間】とにかく即連絡したい人向け（範囲確認が重要）</h3>
-          <ul>
-            <li>「退職の意思を伝える」中心で進むことが多い</li>
-            <li>安さだけで選ぶと、トラブル時に弱い場合がある</li>
-          </ul>
-          <a class="btn primary" href="https://example.com/" rel="sponsored nofollow noopener" target="_blank">公式で条件を見る（アフィ）</a>
-          <p class="small">※“何をやってくれるか”を事前に確認してから申込み。</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="card" id="choose">
-      <h2>失敗しない選び方（3つだけ）</h2>
-      <ul>
-        <li><b>① 想定トラブル</b>：引き止め強め／未払い／有休消化など → 交渉が要りそうなら弁護士型も検討</li>
-        <li><b>② 料金の“総額”</b>：追加費用・返金条件・支払い方法を確認</li>
-        <li><b>③ 連絡手段</b>：LINE/電話/メール、土日祝の対応、即日開始の条件</li>
-      </ul>
-      <div class="hr"></div>
-      <p class="muted">
-        なお、期間の定めがない雇用契約では、退職の申入れから2週間で契約終了とされる説明が公的機関のFAQ等にもあります（就業規則との関係などはケースあり）。不安なら労働局・弁護士へ。  
-      </p>
-    </section>
-
-    <section class="card" id="steps">
-      <h2>今日やる3ステップ（最短で詰まないために）</h2>
-      <ol>
-        <li><b>自分の状況整理</b>：雇用形態（正社員/契約/派遣）・入社日・有休残・会社支給品（PC/鍵）</li>
-        <li><b>回収・返却の段取り</b>：私物回収の方法、返却物のリスト（郵送か手渡しか）</li>
-        <li><b>候補に問い合わせ</b>：対応範囲・料金総額・当日の流れを確認して申込</li>
-      </ol>
-      <p class="small">※このページは一般情報です。個別の法律判断は専門家へ。</p>
-    </section>
-
-    <section class="card">
-      <h2>よくある質問</h2>
-      <h3>Q. 会社が同意しないと辞められない？</h3>
-      <p class="muted">A. 一般に、期間の定めのない契約では退職の申入れから2週間で契約終了とされる説明があります。就業規則や賃金締め日などで実務が変わることもあるので、不安なら労働局や弁護士に相談を。</p>
-
-      <h3>Q. 有休や未払いの話も代行してくれる？</h3>
-      <p class="muted">A. いわゆる「交渉」に踏み込むと、弁護士以外は非弁の問題になり得ます。必要なら弁護士運営のサービスも検討してください。</p>
-
-      <h3>Q. 申込み前に確認すべきことは？</h3>
-      <p class="muted">A. 料金総額、追加費用、返金条件、連絡手段、対応時間、当日の流れ（会社への連絡・書類・返却物）を確認。</p>
-    </section>
-
-    <section class="card">
-      <h2>運営者情報・免責</h2>
-      <p class="muted">
-        当サイトは一般的な情報提供を目的としています。内容の正確性・最新性には配慮しますが、最終判断は公式情報をご確認ください。個別具体の法律相談は弁護士等の専門家へご相談ください。
-      </p>
-      <p class="muted"><a href="privacy.html">プライバシーポリシー</a></p>
-    </section>
-
-    <div class="sticky">
-      <div class="bar">
-        <div>
-          <div><b>今すぐ確認するなら</b></div>
-          <div class="small">条件・料金・対応時間は公式へ（PR）</div>
-        </div>
-        <div class="row">
-          <a class="btn primary" href="https://example.com/" rel="sponsored nofollow noopener" target="_blank">候補Aを見る</a>
-          <a class="btn" href="#recommend">他の候補</a>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <footer class="muted">
-    <p>© 2026 あなたのサイト名</p>
-  </footer>
-</body>
-</html>
+    .card{
+      border:1px solid var(--line);
+      border-radius: var(--r);
+      background: rgba(255,255,255,.05);
+      box-shadow: 0 10px 24px rgba(0,0,0,.22);
+      padding:16px;
+    }
+    .card h2{font-size:18px;margin:0 0 8px}
+    .card h3{font-size:15px;margin:10px 0 6px}
+    ul{margin:8px 0;padding-left:1.1em}
+    li{margin:6px 0}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      padding:12px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.18);
+      text-decoration:none;font-weight:700;
+      background: rgba(255,255
