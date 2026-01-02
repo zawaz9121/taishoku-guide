@@ -91,4 +91,334 @@
       display:inline-flex;align-items:center;justify-content:center;gap:10px;
       padding:12px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.18);
       text-decoration:none;font-weight:700;
-      background: rgba(255,255
+      background: rgba(255,255,255,.07);
+      transition: transform .06s ease, background .2s ease;
+    }
+    .btn:hover{transform: translateY(-1px);background: rgba(255,255,255,.10)}
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(124,92,255,.95), rgba(35,213,171,.75));
+      border-color: transparent;
+      color:#0b1020;
+    }
+    .btn.primary:hover{background: linear-gradient(135deg, rgba(124,92,255,1), rgba(35,213,171,.9))}
+    .kpi{
+      display:flex;gap:10px;flex-wrap:wrap;margin-top:10px
+    }
+    .pill{
+      padding:8px 10px;border:1px solid var(--line);border-radius:999px;
+      background: rgba(0,0,0,.12);font-size:12px;color:var(--muted)
+    }
+    .hr{height:1px;background:rgba(255,255,255,.12);margin:12px 0}
+    .table{width:100%;border-collapse:collapse;margin-top:8px;font-size:13px}
+    .table th,.table td{border-bottom:1px solid rgba(255,255,255,.12);padding:10px;vertical-align:top}
+    .table th{color:rgba(234,240,255,.86);text-align:left}
+    .note{font-size:12px;color:rgba(234,240,255,.65)}
+    .sticky{
+      position: sticky;
+      bottom: 12px;
+      z-index: 10;
+      margin-top: 16px;
+    }
+    .bar{
+      display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
+      border:1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(15,23,48,.72);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 18px 50px rgba(0,0,0,.45);
+      padding: 12px 12px;
+    }
+    .tiny{font-size:12px;color:rgba(234,240,255,.72)}
+    .warn{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 10px;border-radius:14px;
+      background: rgba(255,204,0,.10);
+      border:1px solid rgba(255,204,0,.28);
+      color: rgba(255,235,160,.95);
+      font-size:12px;
+    }
+    .toc a{opacity:.9}
+    .toc a:hover{opacity:1}
+    .footer{padding:26px 18px 40px;color:rgba(234,240,255,.6);font-size:13px}
+    .anchor{scroll-margin-top:90px}
+    .ok{color: rgba(35,213,171,.95); font-weight:800}
+  </style>
+</head>
+
+<body>
+  <header class="wrap">
+    <div class="row">
+      <span class="badge">PR（広告）</span>
+      <span class="badge">2026/01/02：正月休み残りわずか</span>
+      <span class="badge">1ページで結論だけ</span>
+    </div>
+
+    <div class="hero">
+      <div class="hero-in grid">
+        <div class="col7">
+          <h1>休み明け、<br>出社できない人へ。</h1>
+          <p class="sub">
+            「もう無理かも」って思ったら、まずは<b>今日だけ“逃げ道”を作る</b>。<br>
+            退職代行の種類（弁護士/労組/民間）と、失敗しない選び方を整理しました。
+          </p>
+
+          <div class="row">
+            <a class="btn primary" href="#diagnosis">3分診断 → 結論に飛ぶ</a>
+            <a class="btn" href="#recommend">候補を見る</a>
+            <a class="btn" href="#steps">今日やる3ステップ</a>
+          </div>
+
+          <div class="kpi">
+            <span class="pill">✓ PR表記あり</span>
+            <span class="pill">✓ 煽りすぎない設計</span>
+            <span class="pill">✓ 「交渉」線引きを明示</span>
+          </div>
+
+          <p class="muted" style="margin-top:12px">
+            ※本ページはプロモーション（広告）を含みます。リンク経由で申込等があった場合、運営者が報酬を得ることがあります。条件・料金・対応時間は必ず公式で確認してください。
+          </p>
+        </div>
+
+        <div class="col5">
+          <div class="card toc">
+            <h2>最短で読むなら</h2>
+            <ul>
+              <li><a href="#diagnosis">3分診断</a> → どの型を選ぶ？</li>
+              <li><a href="#recommend">候補（アフィリンク）</a></li>
+              <li><a href="#choose">失敗しない選び方</a></li>
+              <li><a href="#steps">今日やる3ステップ</a></li>
+              <li><a href="#faq">よくある質問</a></li>
+            </ul>
+            <div class="hr"></div>
+            <div class="warn">⚠︎ 個別の法律判断は弁護士等へ（このページは一般情報）</div>
+          </div>
+
+          <div class="card" style="margin-top:14px">
+            <h2>“いま”多い状態</h2>
+            <ul>
+              <li>休み明けを想像すると動悸/吐き気</li>
+              <li>上司に言うのが怖い（引き止めが強そう）</li>
+              <li>有休・私物・会社支給品が気になる</li>
+            </ul>
+            <p class="note">※しんどさが強い場合は、まず医療/相談窓口も検討してOK。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- 3分診断 -->
+    <section class="card anchor" id="diagnosis">
+      <h2>3分診断：あなたはどの型が安全？</h2>
+      <p class="muted">チェックしたら下の「おすすめ」が自動で変わります（入力は保存しません）。</p>
+
+      <div class="grid">
+        <div class="col6">
+          <h3>当てはまるものにチェック</h3>
+          <label><input type="checkbox" class="q" value="law" /> 未払い残業代/退職金/有休など「交渉」が必要そう</label><br>
+          <label><input type="checkbox" class="q" value="trouble" /> 会社が強く揉めそう（脅し・違約金など言ってきそう）</label><br>
+          <label><input type="checkbox" class="q" value="simple" /> とにかく“意思表示だけ”を代わりに伝えてほしい</label><br>
+          <label><input type="checkbox" class="q" value="cost" /> 料金はなるべく抑えたい</label><br>
+          <label><input type="checkbox" class="q" value="speed" /> 今日中に動きたい（即日開始したい）</label>
+        </div>
+
+        <div class="col6">
+          <div class="card" style="background: rgba(0,0,0,.12)">
+            <h3>おすすめ</h3>
+            <div id="resultTitle" style="font-size:18px;font-weight:900">まずはチェックを入れてください</div>
+            <p id="resultText" class="muted" style="margin-top:6px">あなたの状況に合わせて「型」を出します。</p>
+            <div class="row" style="margin-top:10px">
+              <a id="resultBtn" class="btn primary" href="#recommend">候補を見る</a>
+              <a class="btn" href="#choose">選び方の根拠</a>
+            </div>
+            <p class="note" style="margin-top:10px">
+              ※「交渉」に踏み込む行為は弁護士以外だと非弁の問題になり得ます。必要なら弁護士運営の型も検討。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 候補（アフィ） -->
+    <section class="card anchor" id="recommend">
+      <h2>候補（ここにアフィリンクを貼る）</h2>
+      <p class="muted">下のボタンURLをあなたのアフィリンクに置換するだけでOK。</p>
+
+      <div class="grid">
+        <div class="card col6">
+          <h3>【弁護士運営】トラブル/交渉の可能性があるなら</h3>
+          <ul>
+            <li>未払い・有休・条件面の話が出そう</li>
+            <li>揉めやすい会社に備えたい</li>
+          </ul>
+          <a class="btn primary" href="YOUR_AFF_LINK_A" rel="sponsored nofollow noopener" target="_blank">弁護士型の公式を見る（PR）</a>
+          <p class="note">※料金・対応範囲・返金条件は必ず公式で確認。</p>
+        </div>
+
+        <div class="card col6">
+          <h3>【労組運営】費用と安心のバランス</h3>
+          <ul>
+            <li>一般的な退職の意思表示中心</li>
+            <li>「弁護士ほどではないが安心寄り」</li>
+          </ul>
+          <a class="btn primary" href="YOUR_AFF_LINK_B" rel="sponsored nofollow noopener" target="_blank">労組型の公式を見る（PR）</a>
+          <p class="note">※対応範囲はサービスごとに差があります。</p>
+        </div>
+
+        <div class="card col12">
+          <h3>【民間】とにかく早く連絡したい（範囲確認が重要）</h3>
+          <ul>
+            <li>“意思表示の伝達”が中心になりやすい</li>
+            <li>安さだけで選ばず、対応範囲を確認</li>
+          </ul>
+          <a class="btn primary" href="YOUR_AFF_LINK_C" rel="sponsored nofollow noopener" target="_blank">民間型の公式を見る（PR）</a>
+          <p class="note">※トラブル想定なら弁護士型も比較。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 選び方 -->
+    <section class="card anchor" id="choose">
+      <h2>失敗しない選び方（ここだけ押さえればOK）</h2>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>軸</th>
+            <th>見るべきポイント</th>
+            <th>ミスりやすい罠</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>対応範囲</b></td>
+            <td>「何をしてくれるか」／交渉可否／即日可否</td>
+            <td>“全部やってくれる”と勘違い</td>
+          </tr>
+          <tr>
+            <td><b>料金総額</b></td>
+            <td>追加費用・返金条件・支払方法</td>
+            <td>安く見せて後から上がる</td>
+          </tr>
+          <tr>
+            <td><b>連絡性</b></td>
+            <td>LINE/電話/メール、土日祝、返信速度</td>
+            <td>休み明け前に間に合わない</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="hr"></div>
+      <p class="muted">
+        「交渉」が必要そうな人は、最初から<b>弁護士運営</b>も視野に入れるのが安全です。
+      </p>
+    </section>
+
+    <!-- 今日やる -->
+    <section class="card anchor" id="steps">
+      <h2>今日やる3ステップ（“詰まない”ための順番）</h2>
+      <ol>
+        <li><b>状況整理</b>：雇用形態／入社日／有休残／会社支給品（PC・鍵・制服）</li>
+        <li><b>回収・返却</b>：私物回収の方法、返却物をリスト化（郵送/手渡し）</li>
+        <li><b>問い合わせ</b>：対応範囲・総額・当日の流れを確認して申込</li>
+      </ol>
+      <p class="note">※このページは一般情報。個別の法律判断は専門家へ。</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="card anchor" id="faq">
+      <h2>よくある質問</h2>
+
+      <h3>Q. 会社が同意しないと辞められない？</h3>
+      <p class="muted">A. 基本は「退職の意思表示」が重要。就業規則や状況で実務が変わる場合もあるので、不安なら専門家に相談を。</p>
+
+      <h3>Q. 有休や未払いの話も代行してくれる？</h3>
+      <p class="muted">A. 「交渉」要素が出るなら弁護士運営の型を検討するのが安全です。</p>
+
+      <h3>Q. 申込前に確認すべきことは？</h3>
+      <p class="muted">A. 料金総額、追加費用、返金条件、連絡手段、当日の流れ（会社への連絡・書類・返却物）です。</p>
+    </section>
+
+    <!-- 免責 -->
+    <section class="card">
+      <h2>運営者情報・免責</h2>
+      <p class="muted">
+        当サイトは一般的な情報提供を目的としています。内容の正確性・最新性には配慮しますが、最終判断は公式情報をご確認ください。個別具体の法律相談は弁護士等の専門家へご相談ください。
+      </p>
+      <p class="muted"><a href="privacy.html">プライバシーポリシー</a></p>
+    </section>
+
+    <!-- 下部固定CTA -->
+    <div class="sticky">
+      <div class="bar">
+        <div>
+          <div style="font-weight:900">まずは“今日だけ逃げ道”を作る</div>
+          <div class="tiny">条件・料金・対応時間は公式で確認（PR）</div>
+        </div>
+        <div class="row">
+          <a class="btn primary" href="YOUR_AFF_LINK_A" rel="sponsored nofollow noopener" target="_blank">今すぐ確認</a>
+          <a class="btn" href="#recommend">比較する</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="wrap footer">
+    <div>© 2026 あなたのサイト名</div>
+  </footer>
+
+  <script>
+    // 3分診断（完全にローカル。保存しない）
+    const qs = () => Array.from(document.querySelectorAll(".q")).filter(x => x.checked).map(x => x.value);
+    const title = document.getElementById("resultTitle");
+    const text  = document.getElementById("resultText");
+    const btn   = document.getElementById("resultBtn");
+
+    function render(){
+      const v = qs();
+      const needLaw = v.includes("law") || v.includes("trouble");
+      const wantSpeed = v.includes("speed");
+      const wantCost = v.includes("cost");
+      const simple = v.includes("simple");
+
+      if(v.length === 0){
+        title.textContent = "まずはチェックを入れてください";
+        text.textContent  = "あなたの状況に合わせて「型」を出します。";
+        btn.href = "#recommend";
+        return;
+      }
+
+      if(needLaw){
+        title.innerHTML = "おすすめ：<span class='ok'>弁護士運営</span>（安全重視）";
+        text.textContent = "交渉やトラブルの可能性があるなら、最初から弁護士型を候補に。";
+        btn.href = "YOUR_AFF_LINK_A";
+        return;
+      }
+
+      if(wantSpeed && !wantCost){
+        title.innerHTML = "おすすめ：<span class='ok'>労組運営</span>（速さ×安心）";
+        text.textContent = "即日で動きたい＆安心も欲しいなら労組型をまず確認。";
+        btn.href = "YOUR_AFF_LINK_B";
+        return;
+      }
+
+      if(wantCost && simple){
+        title.innerHTML = "おすすめ：<span class='ok'>民間</span>（範囲確認は必須）";
+        text.textContent = "意思表示中心で費用を抑えたいなら民間型。ただし対応範囲を必ず確認。";
+        btn.href = "YOUR_AFF_LINK_C";
+        return;
+      }
+
+      title.innerHTML = "おすすめ：<span class='ok'>労組運営</span>（バランス）";
+      text.textContent = "迷うなら費用と安心のバランスが取りやすい労組型から比較がおすすめ。";
+      btn.href = "YOUR_AFF_LINK_B";
+    }
+
+    document.querySelectorAll(".q").forEach(x => x.addEventListener("change", render));
+    render();
+  </script>
+</body>
+</html>
