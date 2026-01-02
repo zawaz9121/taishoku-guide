@@ -3,350 +3,127 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>正月明け、会社に行けない人へ｜退職代行の選び方</title>
-  <meta name="description" content="休み明けが怖い／上司に言えない人向け。退職代行（弁護士/労組/民間）の違い、選び方、今日やることを1ページで整理。※PRあり" />
-  <meta name="robots" content="index,follow" />
-
-  <meta property="og:title" content="正月明け、会社に行けない人へ｜退職代行の選び方" />
-  <meta property="og:description" content="種類の違い・選び方・今日やることを1ページで整理（※PRあり）。" />
-  <meta property="og:type" content="website" />
-
-  <style>
-    :root{
-      --bg:#f6f7fb;
-      --txt:#101828;
-      --muted:#475467;
-      --card:#ffffff;
-      --line:#e4e7ec;
-      --accent:#6d5efc;
-      --accent2:#12b886;
-      --shadow: 0 10px 28px rgba(16,24,40,.08);
-      --r:16px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
-      line-height:1.85;
-      color:var(--txt);
-      background:
-        radial-gradient(900px 420px at 15% 10%, rgba(109,94,252,.14), transparent 60%),
-        radial-gradient(900px 420px at 85% 20%, rgba(18,184,134,.12), transparent 60%),
-        var(--bg);
-    }
-    a{color:inherit}
-    .wrap{max-width:1000px;margin:0 auto;padding:18px}
-    .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-    .badge{
-      display:inline-flex;align-items:center;gap:8px;
-      font-size:12px;padding:6px 10px;border:1px solid var(--line);
-      border-radius:999px;background:rgba(255,255,255,.8)
-    }
-    .card{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius: var(--r);
-      box-shadow: var(--shadow);
-      padding:16px;
-      margin: 14px 0;
-    }
-    .muted{color:var(--muted);font-size:13px}
-    h1{font-size:30px;line-height:1.2;margin:10px 0 10px}
-    h2{font-size:18px;margin:0 0 8px}
-    h3{font-size:15px;margin:12px 0 6px}
-    ul{margin:8px 0;padding-left:1.1em}
-    li{margin:6px 0}
-    ol{margin:8px 0;padding-left:1.2em}
-    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
-    .col7{grid-column:span 7}
-    .col5{grid-column:span 5}
-    .col6{grid-column:span 6}
-    .col12{grid-column:span 12}
-    @media (max-width: 900px){
-      h1{font-size:26px}
-      .col7,.col5,.col6{grid-column:span 12}
-    }
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;gap:10px;
-      padding:12px 14px;border-radius:12px;border:1px solid var(--line);
-      text-decoration:none;font-weight:800;
-      background:#fff;
-      transition: transform .06s ease, box-shadow .2s ease;
-    }
-    .btn:hover{transform: translateY(-1px); box-shadow: 0 12px 26px rgba(16,24,40,.10);}
-    .btn.primary{
-      border-color: transparent;
-      background: linear-gradient(135deg, rgba(109,94,252,1), rgba(18,184,134,.95));
-      color:#fff;
-    }
-    .btn.primary:hover{box-shadow: 0 18px 40px rgba(109,94,252,.18);}
-    .hero{
-      padding:18px;
-      border-radius: 22px;
-      border:1px solid var(--line);
-      background: linear-gradient(135deg, rgba(255,255,255,.95), rgba(255,255,255,.78));
-      box-shadow: var(--shadow);
-    }
-    .nav a{
-      font-size:13px;color:var(--muted);text-decoration:none;
-      border-bottom:1px dashed rgba(71,84,103,.35);
-      padding-bottom:1px;
-    }
-    .nav a:hover{color:var(--txt)}
-    .hr{height:1px;background:var(--line);margin:12px 0}
-    .sticky{
-      position: sticky;
-      bottom: 12px;
-      z-index: 10;
-      margin-top: 16px;
-    }
-    .bar{
-      display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
-      background: rgba(255,255,255,.92);
-      backdrop-filter: blur(10px);
-      border:1px solid var(--line);
-      border-radius: 16px;
-      box-shadow: 0 20px 45px rgba(16,24,40,.12);
-      padding: 12px 12px;
-    }
-    .tiny{font-size:12px;color:var(--muted)}
-    .anchor{scroll-margin-top:90px}
-    .pill{
-      font-size:12px;color:var(--muted);
-      padding:6px 10px;border:1px solid var(--line);
-      border-radius:999px;background:#fff;
-    }
-    .table{width:100%;border-collapse:collapse;margin-top:8px;font-size:13px}
-    .table th,.table td{border-bottom:1px solid var(--line);padding:10px;vertical-align:top}
-    .table th{text-align:left;color:#344054}
-    .footer{padding:26px 18px 40px;color:var(--muted);font-size:13px}
-    .svgbox{width:100%;height:auto;display:block}
-  </style>
+  <title>退職代行の選び方｜1分診断で“あなたに合う型”がわかる</title>
+  <meta name="description" content="上司に言えない/休み明けが怖い人向け。退職代行（弁護士/労組/民間）の違いと選び方を1分診断で整理。※PRあり" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
-
 <body>
-  <header class="wrap">
+<header class="wrap">
+  <div class="row">
+    <span class="badge">PR</span>
+    <span class="badge">更新：2026/01/02</span>
+    <span class="badge">1分診断</span>
+  </div>
+
+  <div class="card grid" style="margin-top:14px">
+    <div class="col7">
+      <h1>退職代行、迷って止まってる人へ</h1>
+      <p class="muted" style="margin:0 0 10px">
+        情報が多すぎて選べないのが普通。ここは「何を基準に決めるか」を最短で整理するページです。
+      </p>
+      <p class="muted" style="margin:0 0 12px">
+        ※本ページはプロモーション（広告）を含みます。リンク経由で申込等があった場合、運営者が報酬を得ることがあります。
+        条件・料金・対応範囲は各公式サイトでご確認ください。
+      </p>
+
+      <div class="row">
+        <a class="btn primary" href="quiz.html">1分診断をやる</a>
+        <a class="btn" href="compare.html">比較を見る</a>
+        <a class="btn" href="articles/what.html">まず基礎</a>
+      </div>
+
+      <div class="row" style="margin-top:12px">
+        <span class="pill">煽らない</span>
+        <span class="pill">基準を固定</span>
+        <span class="pill">公式確認前提</span>
+      </div>
+
+      <div class="row nav" style="margin-top:12px">
+        <a href="quiz.html">診断</a>
+        <a href="compare.html">比較</a>
+        <a href="articles/morning.html">当日の朝</a>
+        <a href="privacy.html">プライバシー</a>
+      </div>
+    </div>
+
+    <div class="col5">
+      <div class="card" style="margin:0">
+        <!-- インラインSVG（画像アップ不要） -->
+        <svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="イメージ" style="width:100%;height:auto;display:block">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#6d5efc" stop-opacity="0.95"/>
+              <stop offset="1" stop-color="#12b886" stop-opacity="0.85"/>
+            </linearGradient>
+          </defs>
+          <rect x="18" y="18" width="484" height="324" rx="22" fill="#f8fafc" stroke="#e4e7ec"/>
+          <rect x="48" y="64" width="240" height="28" rx="10" fill="#eef2ff"/>
+          <rect x="48" y="108" width="320" height="18" rx="9" fill="#f2f4f7"/>
+          <rect x="48" y="138" width="280" height="18" rx="9" fill="#f2f4f7"/>
+          <rect x="48" y="168" width="300" height="18" rx="9" fill="#f2f4f7"/>
+          <g transform="translate(310,90)">
+            <circle cx="90" cy="90" r="92" fill="url(#g1)" opacity="0.15"/>
+            <rect x="34" y="34" width="112" height="124" rx="18" fill="#ffffff" stroke="#e4e7ec"/>
+            <rect x="52" y="58" width="76" height="14" rx="7" fill="#e9d5ff"/>
+            <rect x="52" y="82" width="64" height="12" rx="6" fill="#d1fae5"/>
+            <rect x="52" y="104" width="72" height="12" rx="6" fill="#e5e7eb"/>
+            <rect x="52" y="126" width="56" height="12" rx="6" fill="#e5e7eb"/>
+            <circle cx="124" cy="60" r="10" fill="#6d5efc" opacity="0.9"/>
+          </g>
+          <text x="48" y="236" font-size="14" fill="#667085">診断 → 型を決める → 公式で確認</text>
+          <text x="48" y="266" font-size="22" fill="#101828" font-weight="700">迷いを減らす設計</text>
+          <text x="48" y="294" font-size="14" fill="#667085">“比較表だけ”より決めやすい</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <h2>このサイトで最初にやること</h2>
+    <ol>
+      <li><b>1分診断</b>で「弁護士/労組/民間」どれに寄せるか決める</li>
+      <li><b>当日の朝の手順</b>で“詰まるポイント”を先につぶす</li>
+      <li><b>比較</b>で条件（料金総額・範囲・サポート）を公式で確認</li>
+    </ol>
     <div class="row">
-      <span class="badge">PR</span>
-      <span class="badge">2026/01/02 更新</span>
-      <span class="badge">1ページで整理</span>
+      <a class="btn primary" href="quiz.html">1分診断へ</a>
+      <a class="btn" href="articles/morning.html">当日の朝を見る</a>
     </div>
+  </section>
 
-    <div class="hero grid" style="margin-top:14px">
-      <div class="col7">
-        <h1>正月明け、会社に行けない人へ</h1>
-        <p class="muted" style="margin:0 0 12px">
-          「上司に言えない」「手順が分からない」——そんなときに、まず“今日やること”を整理するためのページです。
-        </p>
+  <section class="card">
+    <h2>記事</h2>
+    <ul>
+      <li><a href="articles/what.html">退職代行とは？できること/できないこと</a></li>
+      <li><a href="articles/types.html">弁護士/労組/民間の違い（選び方）</a></li>
+      <li><a href="articles/price.html">料金で損しない見方（総額・追加費用）</a></li>
+      <li><a href="articles/morning.html">「当日の朝」最短でやること</a></li>
+      <li><a href="articles/faq.html">よくある詰まり（有休/返却/書類）</a></li>
+    </ul>
+  </section>
 
-        <!-- PR表示（ここは残すの推奨） -->
-        <p class="muted" style="margin:0 0 12px">
-          ※本ページはプロモーション（広告）を含みます。リンク経由で申込等があった場合、運営者が報酬を得ることがあります。
-          条件・料金・対応範囲は必ず各公式サイトでご確認ください。
-        </p>
+  <section class="card">
+    <p class="muted"><a href="privacy.html">プライバシーポリシー</a></p>
+  </section>
 
-        <div class="row">
-          <a class="btn primary" href="#recommend">候補を見る</a>
-          <a class="btn" href="#choose">選び方</a>
-          <a class="btn" href="#steps">今日やること</a>
-        </div>
-
-        <div class="row" style="margin-top:12px">
-          <span class="pill">煽りすぎない</span>
-          <span class="pill">比較軸を固定</span>
-          <span class="pill">公式確認前提</span>
-        </div>
-
-        <div class="row nav" style="margin-top:12px">
-          <a href="#recommend">候補</a>
-          <a href="#choose">選び方</a>
-          <a href="#steps">手順</a>
-          <a href="#faq">FAQ</a>
-        </div>
+  <div class="sticky">
+    <div class="bar">
+      <div>
+        <div style="font-weight:900">1分診断 → いまのあなたに合う型</div>
+        <div class="tiny">迷いが強い人ほど先に診断が効く</div>
       </div>
-
-      <div class="col5">
-        <!-- 画像：インラインSVG（アップロード不要） -->
-        <div class="card" style="margin:0">
-          <svg class="svgbox" viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="イメージ">
-            <defs>
-              <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0" stop-color="#6d5efc" stop-opacity="0.95"/>
-                <stop offset="1" stop-color="#12b886" stop-opacity="0.85"/>
-              </linearGradient>
-            </defs>
-            <rect x="18" y="18" width="484" height="324" rx="22" fill="#f8fafc" stroke="#e4e7ec"/>
-            <rect x="48" y="64" width="240" height="28" rx="10" fill="#eef2ff"/>
-            <rect x="48" y="108" width="320" height="18" rx="9" fill="#f2f4f7"/>
-            <rect x="48" y="138" width="280" height="18" rx="9" fill="#f2f4f7"/>
-            <rect x="48" y="168" width="300" height="18" rx="9" fill="#f2f4f7"/>
-
-            <g transform="translate(310,90)">
-              <circle cx="90" cy="90" r="92" fill="url(#g1)" opacity="0.15"/>
-              <rect x="34" y="34" width="112" height="124" rx="18" fill="#ffffff" stroke="#e4e7ec"/>
-              <rect x="52" y="58" width="76" height="14" rx="7" fill="#e9d5ff"/>
-              <rect x="52" y="82" width="64" height="12" rx="6" fill="#d1fae5"/>
-              <rect x="52" y="104" width="72" height="12" rx="6" fill="#e5e7eb"/>
-              <rect x="52" y="126" width="56" height="12" rx="6" fill="#e5e7eb"/>
-              <circle cx="124" cy="60" r="10" fill="#6d5efc" opacity="0.9"/>
-            </g>
-
-            <text x="48" y="230" font-size="14" fill="#667085">今日やることを整理する</text>
-            <text x="48" y="256" font-size="22" fill="#101828" font-weight="700">「型」で選ぶ → 公式で確認</text>
-            <text x="48" y="286" font-size="14" fill="#667085">迷ったら “安全寄り” に倒す</text>
-          </svg>
-        </div>
+      <div class="row">
+        <a class="btn primary" href="quiz.html">診断する</a>
+        <a class="btn" href="compare.html">比較を見る</a>
       </div>
     </div>
-  </header>
+  </div>
+</main>
 
-  <main class="wrap">
-
-    <section class="card">
-      <h2>まず結論：迷ったら「型」で選ぶ</h2>
-      <div class="grid">
-        <div class="card col6" style="margin:0">
-          <h3>弁護士運営（安心重視）</h3>
-          <ul>
-            <li>トラブルが心配／条件面が不安</li>
-            <li>安心を優先したい</li>
-          </ul>
-        </div>
-        <div class="card col6" style="margin:0">
-          <h3>労組運営（バランス）</h3>
-          <ul>
-            <li>費用と安心のバランスを取りたい</li>
-            <li>迷ったときの基準にしやすい</li>
-          </ul>
-        </div>
-        <div class="card col12" style="margin:0">
-          <h3>民間（スピード優先）</h3>
-          <ul>
-            <li>とにかく早く連絡したい</li>
-            <li>対応範囲・追加費用は公式で確認</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- 候補（ここだけリンクを差し替えればOK） -->
-    <section class="card anchor" id="recommend">
-      <h2>候補</h2>
-      <p class="muted">ボタンを押す前に、料金・対応範囲・返金条件などは公式で確認してください。</p>
-
-      <div class="grid">
-        <div class="card col6" style="margin:0">
-          <h3>安心を優先したい人向け</h3>
-          <ul>
-            <li>揉めそう／条件面が不安</li>
-            <li>「安全に終わらせたい」</li>
-          </ul>
-          <!-- YOUR_AFF_LINK_A を差し替え -->
-          <a class="btn primary" href="YOUR_AFF_LINK_A" rel="sponsored nofollow noopener" target="_blank">公式を確認する</a>
-        </div>
-
-        <div class="card col6" style="margin:0">
-          <h3>費用と安心のバランス</h3>
-          <ul>
-            <li>迷ったら比較の基準に</li>
-            <li>標準的な退職手続きが中心</li>
-          </ul>
-          <!-- YOUR_AFF_LINK_B を差し替え -->
-          <a class="btn primary" href="YOUR_AFF_LINK_B" rel="sponsored nofollow noopener" target="_blank">公式を確認する</a>
-        </div>
-
-        <div class="card col12" style="margin:0">
-          <h3>とにかく早く動きたい</h3>
-          <ul>
-            <li>まずは相談・問い合わせしたい</li>
-            <li>範囲・追加費用・即日条件は必ず確認</li>
-          </ul>
-          <!-- YOUR_AFF_LINK_C を差し替え -->
-          <a class="btn primary" href="YOUR_AFF_LINK_C" rel="sponsored nofollow noopener" target="_blank">公式を確認する</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="card anchor" id="choose">
-      <h2>失敗しない選び方（3つ）</h2>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>見る軸</th>
-            <th>確認ポイント</th>
-            <th>ハマりがち</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><b>対応範囲</b></td>
-            <td>何をしてくれるか／連絡手段／即日条件</td>
-            <td>「全部やってくれる」と思い込む</td>
-          </tr>
-          <tr>
-            <td><b>料金総額</b></td>
-            <td>追加費用・返金条件・支払方法</td>
-            <td>最安だけ見て後で増える</td>
-          </tr>
-          <tr>
-            <td><b>サポート</b></td>
-            <td>返信速度／土日祝／相談回数の扱い</td>
-            <td>休み明けまでに間に合わない</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section class="card anchor" id="steps">
-      <h2>今日やる3ステップ</h2>
-      <ol>
-        <li><b>状況整理</b>：雇用形態／入社日／有休残／会社支給品（PC・鍵・制服）</li>
-        <li><b>回収・返却</b>：私物回収の方法、返却物をリスト化（郵送/手渡し）</li>
-        <li><b>問い合わせ</b>：対応範囲・総額・当日の流れを確認して決める</li>
-      </ol>
-      <p class="muted">※このページは一般的な情報提供です。最終判断は各公式情報をご確認ください。</p>
-    </section>
-
-    <section class="card anchor" id="faq">
-      <h2>よくある質問</h2>
-
-      <h3>Q. 上司に連絡するのが怖い</h3>
-      <p class="muted">A. まず「当日の流れ」「あなたがやること／やらなくていいこと」を公式で確認して、負担がどれくらい減るか見てください。</p>
-
-      <h3>Q. 有休・私物・会社支給品が不安</h3>
-      <p class="muted">A. 返却物のリスト化が先。返却は郵送になるケースもあるので、手順は公式案内を優先してください。</p>
-
-      <h3>Q. 申込み前に必ず確認することは？</h3>
-      <p class="muted">A. 料金総額、追加費用、返金条件、対応範囲、連絡手段、即日開始の条件です。</p>
-    </section>
-
-    <section class="card">
-      <h2>運営・免責</h2>
-      <p class="muted">
-        当サイトは一般的な情報提供を目的としています。内容の正確性・最新性には配慮しますが、最終判断は各公式情報をご確認ください。
-      </p>
-      <p class="muted">
-        <a href="privacy.html">プライバシーポリシー</a>
-      </p>
-    </section>
-
-    <div class="sticky">
-      <div class="bar">
-        <div>
-          <div style="font-weight:900">まずは公式で条件を確認</div>
-          <div class="tiny">料金・対応範囲・返金条件は公式が優先</div>
-        </div>
-        <div class="row">
-          <a class="btn primary" href="YOUR_AFF_LINK_A" rel="sponsored nofollow noopener" target="_blank">公式を見る</a>
-          <a class="btn" href="#recommend">候補へ戻る</a>
-        </div>
-      </div>
-    </div>
-
-  </main>
-
-  <footer class="wrap footer">
-    <div>© 2026 taishoku-guide</div>
-  </footer>
+<footer class="wrap footer">
+  <div>© 2026 taishoku-guide</div>
+</footer>
 </body>
 </html>
