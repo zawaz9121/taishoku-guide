@@ -4,15 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>1分診断｜あなたに合う退職代行の型</title>
-  <meta name="description" content="質問に答えるだけで、弁護士/労組/民間どれ寄りかを提案。※PRあり" />
+  <meta name="description" content="質問に答えるだけで、安心（弁護士）/バランス（労組）/交渉（弁護士）どれ寄りかを提案。※PRあり" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 <header class="wrap">
   <div class="row">
     <span class="badge">PR</span>
-    <span class="badge"><a href="index.html" style="text-decoration:none">トップへ</a></span>
-    <span class="badge"><a href="compare.html" style="text-decoration:none">比較へ</a></span>
+    <span class="badge"><a href="index.html" style="text-decoration:none">トップ</a></span>
+    <span class="badge"><a href="compare.html" style="text-decoration:none">比較</a></span>
   </div>
   <div class="card">
     <h1>1分診断：あなたに合う「型」</h1>
@@ -25,33 +25,29 @@
     <h2>質問（5つ）</h2>
 
     <div class="hr"></div>
-
     <div>
-      <p><b>Q1.</b> 会社と揉めそう（未払い・ハラスメント等）がある？</p>
+      <p><b>Q1.</b> 会社と揉めそう（未払い・ハラスメント・強い対立など）がある？</p>
       <label><input type="radio" name="q1" value="2"> ある</label><br/>
       <label><input type="radio" name="q1" value="0"> ない/分からない</label>
     </div>
 
     <div class="hr"></div>
-
     <div>
-      <p><b>Q2.</b> 交渉（有休や条件の話）も任せたい？</p>
-      <label><input type="radio" name="q2" value="2"> 任せたい</label><br/>
-      <label><input type="radio" name="q2" value="1"> できれば</label><br/>
-      <label><input type="radio" name="q2" value="0"> 伝言だけでいい</label>
+      <p><b>Q2.</b> 条件の話（有休・退職日など）で“交渉”が必要になりそう？</p>
+      <label><input type="radio" name="q2" value="2"> 必要になりそう</label><br/>
+      <label><input type="radio" name="q2" value="1"> どちらかというと不安</label><br/>
+      <label><input type="radio" name="q2" value="0"> たぶん不要</label>
     </div>
 
     <div class="hr"></div>
-
     <div>
-      <p><b>Q3.</b> 今日〜明日で動きたい？</p>
-      <label><input type="radio" name="q3" value="2"> すぐ</label><br/>
-      <label><input type="radio" name="q3" value="1"> できれば早め</label><br/>
-      <label><input type="radio" name="q3" value="0"> 急がない</label>
+      <p><b>Q3.</b> 連絡のストレスが強い（電話が鳴るだけで無理）？</p>
+      <label><input type="radio" name="q3" value="2"> かなり強い</label><br/>
+      <label><input type="radio" name="q3" value="1"> 多少</label><br/>
+      <label><input type="radio" name="q3" value="0"> そこまでではない</label>
     </div>
 
     <div class="hr"></div>
-
     <div>
       <p><b>Q4.</b> 料金はどれくらい不安？</p>
       <label><input type="radio" name="q4" value="2"> かなり不安（総額が怖い）</label><br/>
@@ -60,15 +56,14 @@
     </div>
 
     <div class="hr"></div>
-
     <div>
-      <p><b>Q5.</b> 連絡は「LINEだけで完結」がいい？</p>
-      <label><input type="radio" name="q5" value="2"> それがいい</label><br/>
-      <label><input type="radio" name="q5" value="0"> どちらでも</label>
+      <p><b>Q5.</b> まずは「安全側に倒したい」気持ちが強い？</p>
+      <label><input type="radio" name="q5" value="2"> 強い</label><br/>
+      <label><input type="radio" name="q5" value="1"> どちらとも</label><br/>
+      <label><input type="radio" name="q5" value="0"> 早さ/費用も重視したい</label>
     </div>
 
     <div class="hr"></div>
-
     <div class="row">
       <button class="btn primary" id="calc">結果を見る</button>
       <a class="btn" href="articles/morning.html">当日の朝の手順</a>
@@ -79,15 +74,16 @@
     <h2>結果</h2>
     <p id="msg" style="margin:0 0 10px"></p>
 
-    <div class="row">
-      <!-- ここにあなたのリンクを入れる -->
-      <a class="btn primary" id="ctaA" href="YOUR_AFF_LINK_A" rel="sponsored nofollow noopener" target="_blank">候補Aを公式で確認</a>
-      <a class="btn primary" id="ctaB" href="YOUR_AFF_LINK_B" rel="sponsored nofollow noopener" target="_blank">候補Bを公式で確認</a>
-      <a class="btn primary" id="ctaC" href="YOUR_AFF_LINK_C" rel="sponsored nofollow noopener" target="_blank">候補Cを公式で確認</a>
+    <div class="row" id="ctas">
+      <a class="btn primary" id="ctaA" data-aff="A">A（安心）を公式で確認</a>
+      <a class="btn primary" id="ctaB" data-aff="B">B（バランス）を公式で確認</a>
+      <a class="btn primary" id="ctaC" data-aff="C">C（交渉）を公式で確認</a>
       <a class="btn" href="compare.html">比較を見る</a>
     </div>
 
-    <p class="muted" style="margin-top:10px">※最終判断は各公式情報（料金総額・追加費用・返金条件・対応範囲）を優先してください。</p>
+    <p class="muted" style="margin-top:10px">
+      ※最終判断は公式情報（料金総額・追加費用・返金条件・対応範囲・当日の流れ）を優先してください。
+    </p>
   </div>
 </main>
 
@@ -95,6 +91,8 @@
   <div><a href="privacy.html">プライバシーポリシー</a></div>
 </footer>
 
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
 <script>
   function getVal(name){
     const el = document.querySelector('input[name="'+name+'"]:checked');
@@ -110,45 +108,53 @@
 
     const [q1,q2,q3,q4,q5] = v;
 
-    // スコア：弁護士寄り / 労組寄り / 民間寄り
-    let law = 0, union = 0, privateS = 0;
+    // スコア：A(弁護士安心) / B(労組バランス) / C(弁護士交渉)
+    let A = 0, B = 0, C = 0;
 
-    // 揉めそう・交渉したい → 弁護士寄り
-    law += q1 * 2;
-    law += q2 * 2;
+    // 揉めそう・交渉が必要 → Cが強くなる
+    C += q1 * 3;
+    C += q2 * 3;
 
-    // 速度・LINE完結 → 民間/労組寄り
-    privateS += q3 * 2;
-    union += q5;
+    // 安全側に倒したい → A/C上げ
+    A += q5 * 2;
+    C += q5;
 
-    // 料金不安 → 労組/民間寄り（総額・追加費用チェックを促す）
-    union += q4;
-    privateS += q4;
+    // 連絡ストレスが強い → A/B/C どれでも対応し得るが、まず「手順の明確さ」重視でB/Aに寄せる
+    B += q3;
+    A += q3;
 
-    // ざっくり判定
-    const best = Math.max(law, union, privateS);
-    let type = '労組';
-    if(best === law) type = '弁護士';
-    if(best === privateS) type = '民間';
+    // 料金不安 → バランス志向(B)を少し上げる（ただし揉めそうならC優先）
+    B += q4 * 2;
+
+    // 交渉スコアが一定以上ならC確定寄り
+    let type = "B";
+    if (C >= 8) type = "C";
+    else {
+      // Cが高くない場合：AとBの比較
+      if (A >= B) type = "A";
+      else type = "B";
+    }
 
     const result = document.getElementById('result');
     const msg = document.getElementById('msg');
 
-    if(type === '弁護士'){
-      msg.innerHTML = '<b>弁護士寄り</b>：揉めそう/交渉が絡みそうなら、安全側に寄せるのが無難。まずは公式で「対応範囲」と「総額」を確認して比較。';
-      document.getElementById('ctaA').style.display = 'inline-flex';
-      document.getElementById('ctaB').style.display = 'none';
-      document.getElementById('ctaC').style.display = 'none';
-    }else if(type === '労組'){
-      msg.innerHTML = '<b>労組寄り</b>：費用と安心のバランス重視。公式で「追加費用」「返金」「即日条件」を確認して、当日の流れをイメージできるところを選ぶ。';
-      document.getElementById('ctaA').style.display = 'none';
-      document.getElementById('ctaB').style.display = 'inline-flex';
-      document.getElementById('ctaC').style.display = 'none';
+    // CTA表示制御
+    const ctaA = document.getElementById('ctaA');
+    const ctaB = document.getElementById('ctaB');
+    const ctaC = document.getElementById('ctaC');
+    ctaA.style.display = 'inline-flex';
+    ctaB.style.display = 'inline-flex';
+    ctaC.style.display = 'inline-flex';
+
+    if(type === "C"){
+      msg.innerHTML = '<b>交渉（弁護士）寄り</b>：揉めそう/交渉が必要になりそうなら、最初から交渉前提で公式の「対応範囲」「総額」「当日の流れ」を確認。';
+      ctaC.style.order = 0; ctaA.style.order = 1; ctaB.style.order = 2;
+    }else if(type === "A"){
+      msg.innerHTML = '<b>安心（弁護士）寄り</b>：不安が強い・安全側に倒したいなら、まずは弁護士の公式で「対応範囲」「総額」「流れ」を確認してから決める。';
+      ctaA.style.order = 0; ctaB.style.order = 1; ctaC.style.order = 2;
     }else{
-      msg.innerHTML = '<b>民間寄り</b>：とにかく早く動きたい人向け。公式で「何をやってくれるか」「追加費用」「開始条件」を必ず確認してから進む。';
-      document.getElementById('ctaA').style.display = 'none';
-      document.getElementById('ctaB').style.display = 'none';
-      document.getElementById('ctaC').style.display = 'inline-flex';
+      msg.innerHTML = '<b>バランス（労組）寄り</b>：標準的な退職なら、費用と安心のバランスで進めやすい。公式で「追加費用」「返金」「即日条件」を確認。';
+      ctaB.style.order = 0; ctaA.style.order = 1; ctaC.style.order = 2;
     }
 
     result.style.display = 'block';
